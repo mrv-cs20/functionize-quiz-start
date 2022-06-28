@@ -17,20 +17,24 @@
       What country uses the flag below? (<a href="https://www.canada.ca/en.html" target="_blank">HINT</a>)
     </p>
     <img class="black-border" src="media/canada-flag.png" alt="Canada Flag" width="400px">
-    <p class="italic">Answer: <input id='answer1' type="text"> <span id='result1'></span></p>
+    <p>
+      <input id="q1correct" type="radio" name="q1"> Canada<br>
+      <input type="radio" name="q1"> USA<br>
+      <input type="radio" name="q1"> Mexico<br>
+      <input type="radio" name="q1"> Australia
+    </p>
+    <p id='result1'></p>
     <hr>
 
     <h2>Question 2</h2>
     <p>Which of the following is <strong>not</strong> a piece used in Chess?</p>
-    <ul>
-      <li>Pawn</li>
-      <li>Knight</li>
-      <li>Cardinal</li>
-      <li>Rook</li>
-      <li>Queen</li>
-      <li>King</li>
-    </ul>
-    <p class="italic">Answer: <input id='answer2' type="text"> <span id='result2'></span></p>
+    <p>
+      <input type="radio" name="q2"> Pawn<br>
+      <input type="radio" name="q2"> Knight<br>
+      <input id="q2correct" type="radio" name="q2"> Cardinal<br>
+      <input type="radio" name="q2"> Bishop
+    </p>
+    <p id='result2'></p>
     <hr>
 
     <h2>Question 3</h2>
@@ -42,20 +46,33 @@
         Your browser does not support the audio tag.
       </audio>
     </p>
-    <p class="italic">Answer: <input id='answer3' type="text"> <span id='result3'></span></p>
+    <p>
+      <input type="radio" name="q3"> Lord Shen<br>
+      <input id="q3correct" type="radio" name="q3"> Tai Lung<br>
+      <input type="radio" name="q3"> Master Shifu<br>
+      <input type="radio" name="q3"> Kai
+    </p>
+    <p id='result3'></p>
     <hr>
-    
+
     <h2>Question 4</h2>
     <p>
       What sport uses the following equipment?
     </p>
     <img class="black-border" src="media/pb-equipment.jpg" alt="Pickleball Equipment">
-    <p class="italic">Answer: <input id='answer4' type="text"> <span id='result4'></span></p>
+    <p>
+      <input type="radio" name="q4"> Tennis<br>
+      <input type="radio" name="q4"> Ping Pong<br>
+      <input type="radio" name="q4"> Soccer<br>
+      <input id="q4correct" type="radio" name="q4"> Pickleball
+    </p>
+    <p id='result4'></p>
     <hr>
 
     <h2>Results</h2>
     <p>
-      <button id='mark-quiz'>Mark Quiz</button> Your score is <span id='quiz-score'>__</span> / 4 (<span id='quiz-percent'>__</span> %).
+      <button id='mark-quiz'>Mark Quiz</button> Your score is <span id='quiz-score'>__</span> / 4 (<span
+        id='quiz-percent'>__</span> %).
     </p>
     <p>Thanks for taking this <span>Random Quiz!</span></p>
   </div>

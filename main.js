@@ -9,11 +9,10 @@ function markQuiz() {
     let score = 0;
 
     // Check Question 1
-    let answer = document.getElementById('answer1').value;
-    answer = answer.toLowerCase();
+    let questionCorrect = document.getElementById('q1correct').checked;
 
     let result1El = document.getElementById('result1');
-    if (answer == 'canada') {
+    if (questionCorrect) {
         result1El.innerHTML = 'Correct';
         result1El.style.color = 'green';
         score++;
@@ -23,11 +22,10 @@ function markQuiz() {
     }
 
     // Check Question 2
-    answer = document.getElementById('answer2').value;
-    answer = answer.toLowerCase();
+    questionCorrect = document.getElementById('q2correct').checked;
 
     let result2El = document.getElementById('result2');
-    if (answer == 'cardinal') {
+    if (questionCorrect) {
         result2El.innerHTML = 'Correct';
         result2El.style.color = 'green';
         score++;
@@ -37,11 +35,10 @@ function markQuiz() {
     }
 
     // Check Question 3
-    answer = document.getElementById('answer3').value;
-    answer = answer.toLowerCase();
+    questionCorrect = document.getElementById('q3correct').checked;
 
     let result3El = document.getElementById('result3');
-    if (answer == 'tai lung') {
+    if (questionCorrect) {
         result3El.innerHTML = 'Correct';
         result3El.style.color = 'green';
         score++;
@@ -51,11 +48,10 @@ function markQuiz() {
     }
 
     // Check Question 4
-    answer = document.getElementById('answer4').value;
-    answer = answer.toLowerCase();
+    questionCorrect = document.getElementById('q4correct').checked;
 
     let result4El = document.getElementById('result4');
-    if (answer == 'pickleball') {
+    if (questionCorrect) {
         result4El.innerHTML = 'Correct';
         result4El.style.color = 'green';
         score++;
@@ -65,8 +61,7 @@ function markQuiz() {
     }
 
     // Display Quiz Results
+    let percent = Math.round(score / 4 * 100);
     document.getElementById('quiz-score').innerHTML = score;
-    document.getElementById('quiz-percent').innerHTML = Math.round(score / 4 * 100);
-
-
+    document.getElementById('quiz-percent').innerHTML = percent;
 }
